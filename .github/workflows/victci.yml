@@ -1,0 +1,10 @@
+name: victci
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  victimjob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo victim-secret-job-marker
