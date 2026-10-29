@@ -1,9 +1,0 @@
-pull_request_rules:
-  - name: kirasec xorg botacct probe
-    conditions:
-      - base=main
-      - label=kirasec-xorg
-    actions:
-      comment:
-        message: "KIRASEC-XORG-BOTACCT-MARKER"
-        bot_account: kirasec-research1
