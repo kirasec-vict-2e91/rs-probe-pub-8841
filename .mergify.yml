@@ -1,12 +1,9 @@
-queue_rules:
-  - name: default
-    queue_conditions: []
-    merge_conditions: []
-
 pull_request_rules:
-  - name: noop
+  - name: kirasec xorg botacct probe
     conditions:
-      - closed
+      - base=main
+      - label=kirasec-xorg
     actions:
       comment:
-        message: noop
+        message: "KIRASEC-XORG-BOTACCT-MARKER"
+        bot_account: kirasec-research1
